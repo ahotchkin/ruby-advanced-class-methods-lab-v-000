@@ -50,8 +50,8 @@ class Song
     artist_name = parsed_name[0]
     name = parsed_name[1]
 
-    song.name = name
     song.artist_name = artist_name
+    song.name = name
 
   end
 end
