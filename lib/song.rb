@@ -54,7 +54,13 @@ class Song
   end
 
   def self.create_from_filename(filename)
-    self.new_from_filename
+    song = self.new
+    parsed_name = filename.split(/\ - |\.mp3/)
+    artist_name = parsed_name[0]
+    name = parsed_name[1]
+    song.artist_name = artist_name
+    song.name = name
     song.save
+    song
   end
 end
