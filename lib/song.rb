@@ -47,11 +47,11 @@ class Song
     song = self.new
     parsed_name = filename.split(/\ - |\.mp3/)
     # binding.pry
-    artist_name = parsed_name[0]
-    name = parsed_name[1]
+    artist_name1 = parsed_name[0]
+    name1 = parsed_name[1]
 
-    song.artist_name = artist_name
-    song.name = name
+    song.artist_name = artist_name1
+    song.name = name1
 
   end
 end
